@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+.link {
+  color: white !important;
+  text-decoration: none;
+  font-style: normal;
+}
+.img-zoom-container {
+  position: relative;
+}
+.Files  {
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.463);
+  width: fit-content;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.466);
+
+  transition: all 0.5s;
+}
+.Files:hover  {
+  color: rgb(234, 238, 1);
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.466);
+}
+.imgW {
+  width: 40px;
+}
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 90px;
+  height: 50px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  /* width: 300px; */
+  height: 300px;
+  filter: contrast(200%);
+}
+.bg {
+  background-image: url(../images/bg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: 0;
+}
+
+.zIndex-1 {
+  position: relative;
+  z-index: 5;
+}
+
+.zIndex-2 {
+  position: relative;
+  z-index: 10;
+}
+.overlay {
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+  inset: 0;
+}

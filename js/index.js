@@ -2,7 +2,7 @@ var content = document.getElementById("content");
 var stopZoom = document.getElementById("stopZoom");
 var checkZoom = false;
 var temp = ""; 
-for (var i = 1; i <= 15; i++) {
+for (var i = 1; i <= 18; i++) {
   temp += `
   <h2 class="text-center text-light"> Num: #${i}</h2>
 
@@ -29,7 +29,7 @@ stopZoom.addEventListener("click", function () {
     console.log("yes");
     content.innerHTML = ``;
   var temp = ""; 
-  for (var i = 1; i <= 15; i++) {
+  for (var i = 1; i <= 18; i++) {
     temp += `
     <h2 class="text-center text-light"> Num: #${i}</h2>
   
@@ -54,7 +54,7 @@ stopZoom.addEventListener("click", function () {
     console.log("no");
     content.innerHTML = ``;
   var temp = ""; 
-  for (var i = 1; i <= 15; i++) {
+  for (var i = 1; i <= 18; i++) {
     temp += `
     <h2 class="text-center text-light"> Num: #${i}</h2>
   
@@ -73,7 +73,7 @@ stopZoom.addEventListener("click", function () {
 
 document.addEventListener("mouseover", function () {
   if(checkZoom){
-  for (var i = 1; i <= 15; i++) {
+  for (var i = 1; i <= 18; i++) {
     imageZoom(`myimage${i}`, `myresult${i}`);
   }
 }
@@ -81,14 +81,14 @@ document.addEventListener("mouseover", function () {
 
 window.onresize = function () {
   if(checkZoom){
-  for (var i = 1; i <= 15; i++) {
+  for (var i = 1; i <= 18; i++) {
     imageZoom(`myimage${i}`, `myresult${i}`);
   }}
 };
 
 function lensStart() {
   if(checkZoom){
-  for (var i = 1; i <= 15; i++) {
+  for (var i = 1; i <= 18; i++) {
     imageZoom(`myimage${i}`, `myresult${i}`);
   }}
 }
